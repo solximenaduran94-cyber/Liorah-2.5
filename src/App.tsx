@@ -35,7 +35,7 @@ export default function App() {
   // Cart items
   const [cartItems, setCartItems] = useState<CartItem[]>([
     {
-      product: STORE_PRODUCTS[0], // Greenery default
+      product: STORE_PRODUCTS[0], // Default first catalog item (Celeste XV)
       tier: 'interactive',
       quantity: 1,
     },

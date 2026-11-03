@@ -401,38 +401,42 @@ export const WebPageScreenMockup: React.FC<WebPageScreenMockupProps> = ({ produc
       );
     }
 
-    // 8. GREENERY (Boda Botánica Karen & Joaquín)
+    // Default / Generic Fallback
     return (
       <div className="w-full h-full bg-[#FAF8F5] flex flex-col justify-between text-center select-none text-[#1A1A1A] relative overflow-hidden">
-        <div className="relative w-full h-[180px] shrink-0 overflow-hidden">
-          <img
-            src="/images/invitation_wedding_botanical_1793110946314.jpg"
-            alt="Karen y Joaquín"
-            className="w-full h-full object-cover object-center"
-            loading="eager"
-          />
+        <div className="relative w-full h-[180px] shrink-0 overflow-hidden bg-stone-900">
+          {product.coverImage || product.phoneImage ? (
+            <img
+              src={product.coverImage || product.phoneImage}
+              alt={product.name}
+              className="w-full h-full object-cover object-center"
+              loading="eager"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-3xl">✨</div>
+          )}
           <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-[#FAF8F5]" />
-          <div className="absolute top-2 left-2 text-xs opacity-75">🌿</div>
-          <div className="absolute top-2 right-2 text-xs opacity-75">🌿</div>
+          <div className="absolute top-2 left-2 text-xs opacity-75">✨</div>
+          <div className="absolute top-2 right-2 text-xs opacity-75">✨</div>
         </div>
 
         <div className="px-2 py-1 space-y-1 relative z-10 flex-1 flex flex-col justify-center">
           <p className="font-romantic italic text-[7.5px] text-[#6B5E54]">
-            Sé parte de nuestra historia
+            Invitación Digital Web
           </p>
-          <span className="font-ui text-[6.5px] uppercase tracking-[0.25em] text-[#1A1A1A] font-bold block">
-            ¡NOS CASAMOS!
+          <span className="font-ui text-[6.5px] uppercase tracking-[0.25em] text-[#C5A059] font-bold block">
+            {product.category}
           </span>
-          <h4 className="font-script text-2xl text-[#1A1A1A] leading-tight">
-            Karen y Joaquín
+          <h4 className="font-romantic text-xl text-[#1A1A1A] leading-tight font-bold">
+            {product.celebrant || product.name}
           </h4>
           <div className="w-8 h-[1px] bg-[#C5A059] mx-auto my-0.5" />
           <div className="bg-[#FFFDF9] rounded-lg p-1 border border-[#E5D7C5] max-w-[155px] mx-auto text-[7.5px] space-y-0.5">
             <p className="font-bold tracking-wider text-[#1A1A1A]">
-              28 DE NOVIEMBRE 2026
+              {product.date}
             </p>
             <p className="text-[6.5px] text-[#6B5E54]">
-              Estancia & Salón Campestre
+              Liorah Studio Boutique
             </p>
           </div>
         </div>

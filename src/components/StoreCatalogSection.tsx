@@ -12,21 +12,7 @@ interface StoreCatalogSectionProps {
 }
 
 export const STORE_PRODUCTS: StoreProductItem[] = [
-  // 1. Greenery (Boda Botánica)
-  {
-    id: 'prod-greenery',
-    name: 'Greenery (Boda Botánica)',
-    category: 'Boda',
-    price: 70000,
-    celebrant: 'Karen y Joaquín',
-    date: '28.11.2026',
-    coverImage: '/images/invitation_wedding_botanical_1793110946314.jpg',
-    phoneImage: '/images/invitation_wedding_botanical_1793110946314.jpg',
-    styleTag: 'Follaje botánico eucalipto con tipografía manuscrita y detalles dorados.',
-    isBestseller: true,
-  },
-
-  // 2. Official Live Site: Celeste XV (misxv.celeste.liorah.site)
+  // 1. Official Live Site: Celeste XV (misxv.celeste.liorah.site)
   {
     id: 'prod-celeste-xv',
     name: 'Celeste XV (Cele)',

@@ -36,7 +36,7 @@ export const QuickSearchModal: React.FC<QuickSearchModalProps> = ({
             autoFocus
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Buscar por nombre, evento o estilo (ej. Greenery, Celeste, Boda)..."
+            placeholder="Buscar por nombre, celebrante o evento (ej. Celeste, Ariel & Cecilia, 15 Años)..."
             className="w-full bg-transparent text-sm sm:text-base text-[#1A1A1A] placeholder-[#A39589] focus:outline-hidden"
           />
           <button
