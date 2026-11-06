@@ -67,6 +67,62 @@ export const WebPageScreenMockup: React.FC<WebPageScreenMockupProps> = ({ produc
 
   // Render the authentic replica background for each design
   const renderAuthenticDesign = () => {
+    // 0. ZOE XV (misxv.zoe.liorah.site)
+    if (product.id === 'prod-zoe-xv') {
+      return (
+        <div className="w-full h-full bg-[#030712] flex flex-col justify-between text-center select-none text-white relative overflow-hidden">
+          {/* Top Real Photo of Zoe */}
+          <div className="relative w-full h-[180px] shrink-0 overflow-hidden bg-slate-950">
+            <img
+              src="/images/real_sites/zoe_hero.jpg"
+              alt="Zoe - Mis 15 Años"
+              className="w-full h-full object-cover object-[center_25%]"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#030712]/40 via-transparent to-[#030712]" />
+            <div className="absolute top-2 right-2 text-base animate-pulse">💙</div>
+            <div className="absolute top-10 left-2 text-xs opacity-80">✨</div>
+            <div className="absolute top-20 right-3 text-xs opacity-70">🦋</div>
+          </div>
+
+          {/* Copy and details */}
+          <div className="px-2 py-1 space-y-1 relative z-10 flex-1 flex flex-col justify-center">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 border border-slate-700/50 mx-auto shadow-xs">
+              <span className="font-ui text-[6.5px] uppercase tracking-[0.25em] text-cyan-200 font-bold">
+                Mis Quince Años
+              </span>
+            </div>
+            <div className="inline-flex items-center justify-center gap-1">
+              <h4 className="font-prestige text-2xl font-black tracking-[0.18em] text-white uppercase drop-shadow-lg">
+                ZOE
+              </h4>
+              <span className="text-sm text-cyan-400">💙</span>
+            </div>
+            <p className="font-romantic italic text-[8.5px] text-cyan-100">
+              "Una noche mágica e inolvidable"
+            </p>
+            <div className="w-8 h-[1px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent mx-auto my-0.5" />
+            <div className="bg-slate-900/80 backdrop-blur-xs rounded-lg p-1 border border-cyan-500/30 max-w-[155px] mx-auto text-[7.5px] space-y-0.5">
+              <p className="font-bold tracking-wider text-cyan-200">
+                SÁBADO 14 NOV 2026
+              </p>
+              <p className="text-[6.5px] text-slate-300">
+                21:00 HS · Salón Lo Soñado
+              </p>
+            </div>
+          </div>
+
+          {/* Audio Player Pill */}
+          <div className="relative z-10 pb-2">
+            <div className="inline-flex items-center gap-1 bg-cyan-400 text-slate-950 px-3 py-1 rounded-full text-[7.5px] font-bold font-ui tracking-wider uppercase shadow-md mx-auto">
+              <Play className="w-2 h-2 fill-slate-950" />
+              <span>DALE PLAY!</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     // 1. CELESTE XV (misxv.celeste.liorah.site)
     if (product.id === 'prod-celeste-xv') {
       return (
@@ -394,6 +450,203 @@ export const WebPageScreenMockup: React.FC<WebPageScreenMockupProps> = ({ produc
           <div className="relative z-10 pb-2">
             <div className="inline-flex items-center gap-1 bg-[#1A1A1A] text-[#D4AF37] px-3 py-1 rounded-full text-[7.5px] font-bold font-ui tracking-wider uppercase shadow-md mx-auto">
               <Play className="w-2 h-2 fill-[#D4AF37]" />
+              <span>DALE PLAY!</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // 8. XIOMARA DULCE TROPICAL (xio.xv.liorah.site)
+    if (product.id === 'prod-xio-tropical') {
+      return (
+        <div className="w-full h-full bg-[#12081d] flex flex-col justify-between text-center select-none text-white relative overflow-hidden">
+          {/* Real Childhood / Portrait Photo */}
+          <div className="relative w-full h-[180px] shrink-0 overflow-hidden bg-slate-950">
+            <img
+              src="/images/real_sites/xio_tropical.jpg"
+              alt="Xiomara - Mis 15"
+              className="w-full h-full object-cover object-[center_20%]"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#12081d]/30 via-transparent to-[#12081d]" />
+            <div className="absolute top-2 right-2 text-base animate-pulse">🌺</div>
+            <div className="absolute top-10 left-2 text-xs opacity-75">✨</div>
+          </div>
+
+          <div className="px-2 py-1 space-y-1 relative z-10 flex-1 flex flex-col justify-center">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-purple-950/80 border border-purple-500/40 mx-auto shadow-xs">
+              <span className="font-ui text-[6.5px] uppercase tracking-[0.25em] text-fuchsia-200 font-bold">
+                Mis Quince Años
+              </span>
+            </div>
+            <h4 className="font-prestige text-2xl font-black tracking-[0.16em] text-white uppercase drop-shadow-lg">
+              XIOMARA
+            </h4>
+            <p className="font-romantic italic text-[8.5px] text-fuchsia-100">
+              "Una noche soñada en Dulce Tropical"
+            </p>
+            <div className="w-8 h-[1px] bg-gradient-to-r from-transparent via-fuchsia-400 to-transparent mx-auto my-0.5" />
+            <div className="bg-purple-950/80 backdrop-blur-xs rounded-lg p-1 border border-fuchsia-500/30 max-w-[155px] mx-auto text-[7.5px] space-y-0.5">
+              <p className="font-bold tracking-wider text-fuchsia-200">
+                05 . 12 . 2026
+              </p>
+              <p className="text-[6.5px] text-purple-200">
+                21:00 HS · Salón Dulce Tropical, La Plata
+              </p>
+            </div>
+          </div>
+
+          <div className="relative z-10 pb-2">
+            <div className="inline-flex items-center gap-1 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white px-3 py-1 rounded-full text-[7.5px] font-bold font-ui tracking-wider uppercase shadow-md mx-auto">
+              <Play className="w-2 h-2 fill-white" />
+              <span>DALE PLAY!</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // 9. MI PRIMER AÑITO - OSITO PASTEL (mi-primer-a-ito-oso.liorahonline.workers.dev)
+    if (product.id === 'prod-primer-anito-oso') {
+      return (
+        <div className="w-full h-full bg-gradient-to-b from-[#FAF4EC] via-[#F5ECE0] to-[#EFE2D1] flex flex-col justify-between text-center select-none text-[#5A4634] relative overflow-hidden">
+          {/* Adorable Teddy Bear illustration from live site */}
+          <div className="relative w-full h-[180px] shrink-0 overflow-hidden flex items-center justify-center pt-2">
+            <img
+              src="/images/real_sites/teddy_bear.png"
+              alt="Osito Tierno"
+              className="w-36 h-36 object-contain drop-shadow-md"
+              loading="eager"
+            />
+            <div className="absolute top-2 right-2 text-base">⭐</div>
+            <div className="absolute top-8 left-3 text-sm opacity-80">🎈</div>
+            <div className="absolute bottom-2 right-4 text-xs opacity-80">☁️</div>
+          </div>
+
+          <div className="px-2 py-1 space-y-1 relative z-10 flex-1 flex flex-col justify-center">
+            <span className="font-ui text-[7px] uppercase tracking-[0.25em] text-[#A67C52] font-bold block">
+              🧸 MI PRIMER AÑITO 🧸
+            </span>
+            <h4 className="font-script text-2xl text-[#5A4634] leading-tight font-bold">
+              Mi Primer Añito
+            </h4>
+            <p className="font-romantic italic text-[8.5px] text-[#8C6D53]">
+              "Cajita de música & cofre de amor"
+            </p>
+            <div className="w-8 h-[1px] bg-[#C5A059] mx-auto my-0.5" />
+            <div className="bg-[#FFFDF9]/90 backdrop-blur-xs rounded-lg p-1 border border-[#E5D7C5] max-w-[155px] mx-auto text-[7.5px] space-y-0.5 shadow-xs">
+              <p className="font-bold tracking-wider text-[#5A4634]">
+                SÁBADO 20 JUNIO 2026
+              </p>
+              <p className="text-[6.5px] text-[#8C6D53]">
+                Salón Dulces Sonrisas · 16:00 hs
+              </p>
+            </div>
+          </div>
+
+          <div className="relative z-10 pb-2">
+            <div className="inline-flex items-center gap-1 bg-[#8C6D53] text-[#FAF4EC] px-3 py-1 rounded-full text-[7.5px] font-bold font-ui tracking-wider uppercase shadow-md mx-auto">
+              <Music className="w-2 h-2 text-[#FAF4EC]" />
+              <span>CAJITA DE MÚSICA</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // 10. PRINCESA Y EL SAPO - SOFÍA XV (invitacion-princesa-y-el-sapo.liorahonline.workers.dev)
+    if (product.id === 'prod-princesa-sapo') {
+      return (
+        <div className="w-full h-full bg-gradient-to-b from-[#07170E] via-[#0E2819] to-[#05110A] flex flex-col justify-between text-center select-none text-[#F1F9F4] relative overflow-hidden">
+          {/* Magical Bayou & Lotus Background */}
+          <div className="relative w-full h-[180px] shrink-0 overflow-hidden flex flex-col items-center justify-center bg-gradient-to-b from-[#0E2819] to-[#07170E]">
+            <div className="w-20 h-20 rounded-full border border-[#C5A059]/40 bg-[#07170E]/80 flex items-center justify-center text-4xl shadow-inner relative">
+              👑
+              <span className="absolute -bottom-1 -right-1 text-base">🐸</span>
+            </div>
+            <div className="absolute top-2 right-2 text-sm text-[#C5A059] animate-pulse">✨</div>
+            <div className="absolute top-8 left-3 text-xs opacity-75">🪷</div>
+            <div className="absolute bottom-2 right-3 text-xs opacity-75">🌿</div>
+          </div>
+
+          <div className="px-2 py-1 space-y-1 relative z-10 flex-1 flex flex-col justify-center">
+            <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#07170E]/90 border border-[#C5A059]/30 mx-auto">
+              <span className="font-ui text-[6.5px] uppercase tracking-[0.25em] text-[#C5A059] font-bold">
+                Mis Quince Años · Tiana
+              </span>
+            </div>
+            <h4 className="font-romantic text-2xl font-bold tracking-widest text-[#FFFDF9] uppercase">
+              SOFÍA
+            </h4>
+            <p className="font-romantic italic text-[8.5px] text-[#A7D7B5]">
+              "Los sueños sí se hacen realidad"
+            </p>
+            <div className="w-8 h-[1px] bg-[#C5A059]/60 mx-auto my-0.5" />
+            <div className="bg-[#0A2014]/90 backdrop-blur-xs rounded-lg p-1 border border-[#C5A059]/30 max-w-[155px] mx-auto text-[7.5px] space-y-0.5">
+              <p className="font-bold tracking-wider text-[#C5A059]">
+                SÁBADO 4 OCTUBRE 2026
+              </p>
+              <p className="text-[6.5px] text-[#A7D7B5]">
+                Salón de Gala · 21:00 hs
+              </p>
+            </div>
+          </div>
+
+          <div className="relative z-10 pb-2">
+            <div className="inline-flex items-center gap-1 bg-[#C5A059] text-[#07170E] px-3 py-1 rounded-full text-[7.5px] font-bold font-ui tracking-wider uppercase shadow-md mx-auto">
+              <Play className="w-2 h-2 fill-[#07170E]" />
+              <span>DALE PLAY!</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // 11. MAIA XV - MULÁN IMPERIAL (mulan.liorah.site)
+    if (product.id === 'prod-mulan-xv') {
+      return (
+        <div className="w-full h-full bg-gradient-to-b from-[#2B0909] via-[#3B0E0E] to-[#1F0606] flex flex-col justify-between text-center select-none text-[#FFF5F5] relative overflow-hidden">
+          {/* Authentic Real Photo of Maia in Imperial Dress */}
+          <div className="relative w-full h-[180px] shrink-0 overflow-hidden bg-stone-950">
+            <img
+              src="/images/real_sites/maia_estas_si.jpg"
+              alt="Maia - Mis 15 Años Mulán"
+              className="w-full h-full object-cover object-[center_20%]"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#2B0909]/30 via-transparent to-[#2B0909]" />
+            <div className="absolute top-2 right-2 text-base animate-pulse">🌸</div>
+            <div className="absolute top-10 left-2 text-xs opacity-75">🪭</div>
+            <div className="absolute bottom-2 right-3 text-xs opacity-80">✨</div>
+          </div>
+
+          <div className="px-2 py-1 space-y-1 relative z-10 flex-1 flex flex-col justify-center">
+            <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#1F0606]/90 border border-[#D4AF37]/40 mx-auto">
+              <span className="font-ui text-[6.5px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
+                Mis 15 Años · Invitación Imperial
+              </span>
+            </div>
+            <h4 className="font-prestige text-2xl font-black tracking-widest text-white uppercase drop-shadow-md">
+              MAIA
+            </h4>
+            <p className="font-romantic italic text-[8.5px] text-[#FECDD3]">
+              "Honor, valentía y una noche inolvidable"
+            </p>
+            <div className="w-8 h-[1px] bg-[#D4AF37]/60 mx-auto my-0.5" />
+            <div className="bg-[#3B0E0E]/90 backdrop-blur-xs rounded-lg p-1 border border-[#D4AF37]/30 max-w-[155px] mx-auto text-[7.5px] space-y-0.5">
+              <p className="font-bold tracking-wider text-[#D4AF37]">
+                VIERNES 26 JUNIO 2026
+              </p>
+              <p className="text-[6.5px] text-[#FECDD3] truncate px-1">
+                Alvear Palace Hotel · Salón Versailles
+              </p>
+            </div>
+          </div>
+
+          <div className="relative z-10 pb-2">
+            <div className="inline-flex items-center gap-1 bg-[#D4AF37] text-[#2B0909] px-3 py-1 rounded-full text-[7.5px] font-bold font-ui tracking-wider uppercase shadow-md mx-auto">
+              <Play className="w-2 h-2 fill-[#2B0909]" />
               <span>DALE PLAY!</span>
             </div>
           </div>

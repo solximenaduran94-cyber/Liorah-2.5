@@ -27,6 +27,21 @@ export const STORE_PRODUCTS: StoreProductItem[] = [
     isBestseller: true,
   },
 
+  // 2. Official Live Site: Zoe XV (misxv.zoe.liorah.site)
+  {
+    id: 'prod-zoe-xv',
+    name: 'Zoe XV (Mis 15 Años 💙)',
+    category: '15 años',
+    price: 70000,
+    celebrant: 'Zoe',
+    date: '14.11.2026',
+    coverImage: '/images/real_sites/zoe_hero.jpg',
+    phoneImage: '/images/real_sites/zoe_hero.jpg',
+    liveUrl: 'https://misxv.zoe.liorah.site/',
+    styleTag: 'Azul noche cósmico con mariposa azul, estrellas titilantes y música de entrada.',
+    isBestseller: true,
+  },
+
   // 3. Official Live Site: Ariel & Cecilia (arielycecilia.liorah.site)
   {
     id: 'prod-ariel-cecilia',
@@ -110,6 +125,64 @@ export const STORE_PRODUCTS: StoreProductItem[] = [
     phoneImage: '/images/sample_alma_xv_invitation_1793130391587.jpg',
     liveUrl: 'https://almaxv.liorah.site/',
     styleTag: 'Glamour en magenta vibrante y destellos de oro, estilo alta costura.',
+  },
+
+  // 9. Official Live Site: Xiomara XV - Dulce Tropical (xio.xv.liorah.site)
+  {
+    id: 'prod-xio-tropical',
+    name: 'Xiomara XV (Dulce Tropical)',
+    category: '15 años',
+    price: 70000,
+    celebrant: 'Xiomara',
+    date: '05.12.2026',
+    coverImage: '/images/real_sites/xio_tropical.jpg',
+    phoneImage: '/images/real_sites/xio_tropical.jpg',
+    liveUrl: 'https://xio.xv.liorah.site/',
+    styleTag: 'Salón Dulce Tropical, álbum de infancia, tonos cálidos y fiesta inolvidable.',
+    isBestseller: true,
+  },
+
+  // 10. Official Live Site: Mi Primer Añito - Osito Pastel (mi-primer-a-ito-oso.liorahonline.workers.dev)
+  {
+    id: 'prod-primer-anito-oso',
+    name: 'Mi Primer Añito (Osito Pastel 🧸)',
+    category: 'Cumpleaños / Bautismo',
+    price: 70000,
+    celebrant: 'Mi Primer Añito',
+    date: '20.06.2026',
+    coverImage: '/images/real_sites/teddy_bear.png',
+    phoneImage: '/images/real_sites/teddy_bear.png',
+    liveUrl: 'https://mi-primer-a-ito-oso.liorahonline.workers.dev/',
+    styleTag: 'Cajita de música mágica, osito tierno pastel, tonos arena y cofre de bendiciones.',
+  },
+
+  // 11. Official Live Site: Princesa y el Sapo - Sofía XV (invitacion-princesa-y-el-sapo.liorahonline.workers.dev)
+  {
+    id: 'prod-princesa-sapo',
+    name: 'Sofía XV (Princesa y el Sapo 🐸)',
+    category: '15 años',
+    price: 70000,
+    celebrant: 'Sofía',
+    date: '04.10.2026',
+    coverImage: '/images/sample_xiomara_emerald_quince_1793112043538.jpg',
+    phoneImage: '/images/sample_xiomara_emerald_quince_1793112043538.jpg',
+    liveUrl: 'https://invitacion-princesa-y-el-sapo.liorahonline.workers.dev/',
+    styleTag: 'Inspiración Tiana en verde esmeralda profundo, flor de loto, destellos de oro y pantano mágico.',
+  },
+
+  // 12. Official Live Site: Maia XV - Mulán Imperial (mulan.liorah.site)
+  {
+    id: 'prod-mulan-xv',
+    name: 'Maia XV (Estilo Mulán Imperial 🌸)',
+    category: '15 años',
+    price: 70000,
+    celebrant: 'Maia Rodríguez',
+    date: '26.06.2026',
+    coverImage: '/images/real_sites/maia_estas_si.jpg',
+    phoneImage: '/images/real_sites/maia_estas_si.jpg',
+    liveUrl: 'https://mulan.liorah.site/',
+    styleTag: 'Alvear Palace Hotel (Salón Versailles), temática imperial Mulán con pétalos de cerezo y gala.',
+    isBestseller: true,
   },
 ];
 
